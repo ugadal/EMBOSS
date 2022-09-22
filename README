@@ -1,7 +1,43 @@
 THIS REPO IS A MIRROR OF THE EMBOSS SOURCE CODE
 ===============================================
 
+Emboss est virtuellement abandonné depuis des années.
 
+Il n'y a plus personne officiellement chargé de le maintenir, c'est très dommage.
+
+Toutefois il reste disponible, j'ai pour ma part “forké” un repository github, 
+dans lequel j'ai veillé à mettre les quelques modifications qui sont devenues nécessaires 
+suite aux évolutions des compilateurs par exemple, et corrigé quelques bugs historiques. 
+Emboss n'est pas perdu, et pourra éventuellement réévoluer.
+
+pour l'installer:
+
+cd /opt
+git clone https://github.com/ugadal/EMBOSS.git
+cd EMBOSS
+./configure
+! vérifiez que la commande précédente a validé le PDF et le PNG !
+
+./configure |egrep -i "pdf|png|sql"
+idéalement pdf et png supporté et aucun SQL intégré
+
+quand c'est le cas
+
+make
+make install
+ensuite, si c'est une toute première installation
+
+env-update
+make install
+pour linux MINT users
+
+apt install libgd-dev
+apt install libhpdf-dev
+./configure
+make 
+make install
+ldconfig
+make install
 General Users.
 -------------
 
