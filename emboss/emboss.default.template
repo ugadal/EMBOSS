@@ -6,6 +6,10 @@
 
 # SET emboss_tempdata path_to_directory_$EMBOSS/test
 
+# as good as fixing it straight to default correct place
+# 2024/04/11
+SET emboss_tempdata /usr/local/share/EMBOSS/test
+
 # Proxy - set this if any databases are accessed through a proxy web server.
 # Turn off in the DB definition with proxy: ":" for any
 # databases that are internal and should not go through the proxy.
